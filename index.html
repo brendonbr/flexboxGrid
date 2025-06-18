@@ -10,30 +10,30 @@
 
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="">Home</a>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="#home">Home</a>
                 </li>
-                <li>
-                    <a href="">Sobre Nós</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="#aboutUs">Sobre Nós</a>
                 </li>
-                <li>
-                    <a href="">Serviços</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="#services">Serviços</a>
                 </li>
-                <li>
-                    <a href="">Depoimentos</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="#feedback">Depoimentos</a>
                 </li>
-                <li>
-                    <a href="">Contatos</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="#contact">Contatos</a>
                 </li>
             </ul>
 
-            <a id="btnMobile" href="/">
-                <hr>
-                <hr>
-                <hr>
+            <a class="nav__toggle" aria-label="Abrir menu" href="/">
+                <hr class="nav__bar">
+                <hr class="nav__bar">
+                <hr class="nav__bar">
             </a>
         </nav>
     </header>
@@ -42,68 +42,62 @@
 
         <section id="home">
 
-            <img loading="lazy" src="imgs/home/dark_banner_xl.webp" alt="folder_home" srcset="imgs/home/dark_banner_xl.webp 1920w, 
+            <img  loading="lazy" src="imgs/home/dark_banner_xl.webp" alt="folder_home" srcset="imgs/home/dark_banner_xl.webp 1920w, 
                         imgs/home/dark_banner_lg.webp 1280w,
                         imgs/home/dark_banner_md.webp 1024w,
                         imgs/home/dark_banner_sm.webp 768w,
                         imgs/home/dark_banner_xs.webp 480w">
         </section>
 
-        <section id="aboutUs">
-            <h1>Sobre Nós</h1>
+        <section class="about-us" id="aboutUs">
+            <h1 class="about-us__title">Sobre Nós</h1>
 
-            <div id="aboutUsContainer">
+            <div class="about-us__container">
 
-                <div id="txtImgContainer">
+                <div class="about-us__intro">
 
-                                        <img loading="lazy" src="imgs/about/about_heart_final_xl.png" alt="about_icon" srcset="imgs/about/about_heart_final_xl.png 1920w, 
+                            <img class="about-us__img" loading="lazy" src="imgs/about/about_heart_final_xl.png" alt="about_icon" srcset="imgs/about/about_heart_final_xl.png 1920w, 
                                 imgs/about/about_heart_final_lg.png 1280w,
                                 imgs/about/about_heart_final_md.png 1024w,
                                 imgs/about/about_heart_final_sm.png 768w,
                                 imgs/about/about_heart_final_xs.png 480w">
 
-                    <div class="content">
-                        <p>
+                    <div class="about-us__text-content">
+                        <p class="about-us__paragraph">
                             Somos uma equipe apaixonada por design, tecnologia e estratégia, dedicada a criar
                             experiências digitais excepcionais. No centro do nosso trabalho está o compromisso com a
                             inovação,
                             usabilidade e impacto visual.
                         </p>
 
-                        <p>
+                        <p class="about-us__paragraph">
                             Seja para construir uma marca, lançar um produto ou aprimorar a interface do seu site —
                             unimos
                             criatividade e tecnologia para transformar sua ideia em realidade.
                         </p>
                     </div>
-
-
-
-
-
-
                 </div>
 
-                <div id="cardContainer">
-                    <h3>
+                <div class="about-us__level-container">
+                    <h3 class="about-us__subtitle">
                         O que nos move
                     </h3>
 
 
-                    <div>
-                        <p>
+                    <div class="about-us__level-content">
+                        <p class="about-us__level-paragraph">
                             Amor genuíno pelo design
                         </p>
 
-                        <p>
+                        <p class="about-us__level-paragraph">
                             Soluções com propósito
                         </p>
 
-                        <p>
+                        <p class="about-us__level-paragraph">
                             Evolução constante
                         </p>
 
-                        <p>
+                        <p class="about-us__level-paragraph">
                             Colaboração transparente com nossos clientes
                         </p>
                     </div>
@@ -113,19 +107,19 @@
 
         </section>
 
-        <section id="services">
-            <h1>Serviços</h1>
+        <section class="services" id="services">
+            <h1 class="services__title">Serviços</h1>
 
-            <div id="servicesContainer">
+            <div class="services__container">
 
-                <img src="/imgs/services/services_section_lg.png" alt="service_icon" srcset="imgs/services/services_section_xl.png 1920w, 
+                <img class="services__img" src="/imgs/services/services_section_lg.png" alt="service_icon" srcset="imgs/services/services_section_xl.png 1920w, 
                                 imgs/services/services_section_lg.png 1280w,
                                 imgs/services/services_section_md.png 1024w,
                                 imgs/services/services_section_sm.png 768w,
                                 imgs/services/services_section_xs.png 480w">
 
 
-                <p>
+                <p class="services__subtitle">
                     Transformamos ideias em experiências visuais impactantes.Confira o que podemos fazer pelo seu
                     projeto:
                 </p>
@@ -135,98 +129,98 @@
 
 
 
-            <div id="cardContainer">
+            <div class="services__card-container">
 
-                <div class="card">
+                <div class="services__card">
 
-                    <div class="card-header">
-                        <img src="/imgs/services/service_1_lg.png" alt="service_1" srcset="imgs/services/service_1_xl.png 1920w, 
+                    <div class="services__card-header">
+                        <img class="services__card-img" src="/imgs/services/service_1_lg.png" alt="service_1" srcset="imgs/services/service_1_xl.png 1920w, 
                                 imgs/services/service_1_lg.png 1280w,
                                 imgs/services/service_1_md.png 1024w,
                                 imgs/services/service_1_sm.png 768w,
                                 imgs/services/service_1_xs.png 480w">
                     </div>
 
-                    <h3>
+                    <h3 class="services__card-title">
                         Design de Interfaces (UI/UX)
                     </h3>
 
-                    <p>
+                    <p class="services__card-paragraph">
                         Criamos interfaces intuitivas, bonitas e funcionais, sempre focadas na melhor experiência do
                         usuário.
                     </p>
                 </div>
-                <div class="card">
+                <div class="services__card">
 
-                    <div class="card-header">
-                        <img src="/imgs/services/service_2_lg.png" alt="service_2" srcset="imgs/services/service_2_xl.png 1920w, 
+                    <div class="services__card-header">
+                        <img class="services__card-img" src="/imgs/services/service_2_lg.png" alt="service_2" srcset="imgs/services/service_2_xl.png 1920w, 
                                 imgs/services/service_2_lg.png 1280w,
                                 imgs/services/service_2_md.png 1024w,
                                 imgs/services/service_2_sm.png 768w,
                                 imgs/services/service_2_xs.png 480w">
                     </div>
 
-                    <h3>
+                    <h3 class="services__card-title">
                         Identidade Visual & Branding
                     </h3>
 
-                    <p>
+                    <p class="services__card-paragraph">
                         Desenvolvemos marcas autênticas, com personalidade forte e identidade visual consistente, do
                         logotipo ao guia de estilo.
                     </p>
                 </div>
-                <div class="card">
+                <div class="services__card">
 
-                    <div class="card-header">
-                        <img src="/imgs/services/service_3_lg.png" alt="service_3" srcset="imgs/services/service_3_xl.png 1920w, 
+                    <div class="services__card-header">
+                        <img class="services__card-img" src="/imgs/services/service_3_lg.png" alt="service_3" srcset="imgs/services/service_3_xl.png 1920w, 
                                 imgs/services/service_3_lg.png 1280w,
                                 imgs/services/service_3_md.png 1024w,
                                 imgs/services/service_3_sm.png 768w,
                                 imgs/services/service_3_xs.png 480w">
                     </div>
 
-                    <h3>
+                    <h3 class="services__card-title">
                         Desenvolvimento Web
                     </h3>
 
-                    <p>
+                    <p class="services__card-paragraph">
                         Sites rápidos, responsivos e alinhados com as melhores práticas de performance e SEO.
                     </p>
                 </div>
-                <div class="card">
+                <div class="services__card">
 
-                    <div class="card-header">
-                        <img src="/imgs/services/service_4_lg.png" alt="service_4" srcset="imgs/services/service_4_xl.png 1920w, 
+                    <div class="services__card-header">
+                        <img class="services__card-img" src="/imgs/services/service_4_lg.png" alt="service_4" srcset="imgs/services/service_4_xl.png 1920w, 
                                 imgs/services/service_4_lg.png 1280w,
                                 imgs/services/service_4_md.png 1024w,
                                 imgs/services/service_4_sm.png 768w,
                                 imgs/services/service_4_xs.png 480w">
                     </div>
 
-                    <h3>
+                    <h3 class="services__card-title">
                         Design para Mídias Sociais
                     </h3>
 
-                    <p>
+                    <p class="services__card-paragraph">
                         Criamos peças visuais atrativas e coerentes com a identidade da sua marca para redes sociais,
                         campanhas e anúncios.
                     </p>
                 </div>
-                <div class="card">
+                <div class="services__card">
 
-                    <div class="card-header">
-                        <img src="/imgs/services/service_5_lg.png" alt="service_1" srcset="imgs/services/service_5_xl.png 1920w, 
+                    <div class="services__card-header">
+                        <img class="services__card-img" src="/imgs/services/service_5_lg.png" alt="service_1" srcset="imgs/services/service_5_xl.png 1920w, 
                                 imgs/services/service_5_lg.png 1280w,
                                 imgs/services/service_5_md.png 1024w,
                                 imgs/services/service_5_sm.png 768w,
                                 imgs/services/service_5_xs.png 480w">
                     </div>
 
-                    <h3>
+                    <h3 class="services__card-title">
                         Estratégia & Consultoria Digital
                     </h3>
 
-                    <p>
+                    <p class="services__card-paragraph">
                         Ajudamos você a definir metas, posicionamento e ações visuais eficazes para impulsionar sua
                         presença online.
                     </p>
@@ -235,13 +229,13 @@
             </div>
         </section>
 
-        <section id="feedback">
-            <h1>Depoimentos</h1>
+        <section class="feedback" id="feedback">
+            <h1 class="feedback__title">Depoimentos</h1>
 
 
-            <div id="feedbackContainer">
+            <div class="feedback__container">
 
-                <img src="/imgs/feedback/feedback_section_lg.png" alt="service_1" srcset="imgs/feedback/feedback_section_xl.png 1920w, 
+                <img class="feedback__img" src="/imgs/feedback/feedback_section_lg.png" alt="service_1" srcset="imgs/feedback/feedback_section_xl.png 1920w, 
             imgs/feedback/feedback_section_lg.png 1280w,
             imgs/feedback/feedback_section_md.png 1024w,
             imgs/feedback/feedback_section_sm.png 768w,
@@ -251,39 +245,39 @@
 
            
 
-            <div id="feedbackComentContainer">
+            <div class="feedback__coment-container">
 
-                <p>
+                <p class="feedback__paragraph">
                     A opinião dos nossos clientes é a prova do nosso compromisso com excelência e resultado. Veja o que
                     dizem sobre trabalhar conosco:
                 </p>
 
-                <div id="feedbackContentContainer">
+                <div class="feedback__content-container">
 
-                <div class="feedbackContent">
-                    <p class="feedbackComent">
+                <div class="feedback__content">
+                    <p class="feedback__coment">
                         “Fiquei impressionado com a criatividade e o profissionalismo da equipe. Meu site ficou moderno,
                         rápido e exatamente como imaginei.”
                     </p>
-                    <p class="feedbackAuthor">
+                    <p class="feedback__author">
                         — <b>Marina Lopes</b>, fundadora da Vida Natural
                     </p>
                 </div>
-                <div class="feedbackContent">
-                    <p class="feedbackComent">
+                <div class="feedback__content">
+                    <p class="feedback__coment">
                         “A identidade visual que criaram para minha marca elevou nosso posicionamento no mercado. Hoje
                         somos reconhecidos com muito mais força!”
                     </p>
-                    <p class="feedbackAuthor">
+                    <p class="feedback__author">
                         — <b>Rafael Silva</b>, diretor da Orbe Tech
                     </p>
                 </div>
-                <div class="feedbackContent">
-                    <p class="feedbackComent">
+                <div class="feedback__content">
+                    <p class="feedback__coment">
                         “Excelente atendimento, prazos cumpridos e entregas impecáveis. Recomendo para qualquer empresa
                         que queira crescer online.”
                     </p>
-                    <p class="feedbackAuthor">
+                    <p class="feedback__author">
                         — <b>Juliana Andrade</b>, gerente de marketing da Lume Educação
                     </p>
                 </div>
@@ -297,11 +291,11 @@
 
         </section>
 
-        <section id="contact">
+        <section class="contact" id="contact">
             <h1>Contato</h1>
 
-            <div id="contactContainer">
-                <img src="/imgs/contact/contact_section_lg.png" alt="service_1" srcset="imgs/contact/contact_section_xl.png 1920w, 
+            <div class="contact__container">
+                <img class="contact__img" src="/imgs/contact/contact_section_lg.png" alt="service_1" srcset="imgs/contact/contact_section_xl.png 1920w, 
                         imgs/contact/contact_section_lg.png 1280w,
                         imgs/contact/contact_section_md.png 1024w,
                         imgs/contact/contact_section_sm.png 768w,
@@ -309,43 +303,43 @@
 
 
 
-                <div id="contactContent">
-                    <p>
+                <div class="contact__content">
+                    <p class="contact__content-paragraph">
                         Pronto para transformar sua ideia em um projeto incrível?<br>Fale com a gente — será um prazer
                         te
                         ajudar!
                     </p>
 
-                    <div id="contactInfo">
-                        <p>E-mail: contato@suamarca.com</p>
-                        <p>Telefone: (11) 99999-9999</p>
-                        <p>Endereço: Rua Criatividade, 123 – São Paulo, SP</p>
-                        <p>Horário de atendimento: Segunda a Sexta, das 9h às 18h</p>
+                    <div class="contact__info">
+                        <p class="contact__info-paragraph">E-mail: contato@suamarca.com</p>
+                        <p class="contact__info-paragraph">Telefone: (11) 99999-9999</p>
+                        <p class="contact__info-paragraph">Endereço: Rua Criatividade, 123 – São Paulo, SP</p>
+                        <p class="contact__info-paragraph">Horário de atendimento: Segunda a Sexta, das 9h às 18h</p>
                     </div>
 
-                    <div id="contactForms">
-                        <form method="get">
-                            <label>
+                    <div class="contact__forms-container">
+                        <form class="contact__forms" method="get">
+                            <label class="contact__forms-label">
                                 Nome
-                                <input type="text">
+                                <input type="text" class="contact__forms-input">
                             </label>
                             
-                            <label>
+                            <label class="contact__forms-label">
                                 Email
-                                <input type="text">
+                                <input type="text" class="contact__forms-input">
                             </label>
                             
-                            <label>
+                            <label class="contact__forms-label">
                                 Assunto
-                                <input type="text">
+                                <input type="text" class="contact__forms-input">
                             </label>
 
-                            <label>
+                            <label class="contact__forms-label">
                                 Mensagem
-                                <textarea rows="4"></textarea>
+                                <textarea rows="4" class="contact__forms-textarea"></textarea>
                             </label>
                             
-                            <button type="submit">Enviar</button>
+                            <button type="submit" class="contact__forms-btn-submit">Enviar</button>
 
                         </form>
                     </div>

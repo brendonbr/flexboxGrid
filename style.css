@@ -231,11 +231,11 @@ button:focus {
 @media (min-width: 1441px) {
 
 
-    header nav #btnMobile {
+    .nav__toggle {
         display: none;
     }
 
-    header nav ul {
+    .nav__list {
 
         gap: 2rem;
         display: flex;
@@ -243,7 +243,7 @@ button:focus {
 
 
 
-    header nav ul li a {
+    .nav__link {
         font-size: 1.3rem;
     }
 
@@ -252,11 +252,11 @@ button:focus {
 
 @media (max-width: 1440px) {
 
-    header nav #btnMobile {
+    .nav__toggle {
         display: none;
     }
 
-    header nav ul {
+    .nav__list {
 
         gap: 2rem;
         display: flex;
@@ -265,7 +265,7 @@ button:focus {
 
 
 
-    header nav ul li a {
+    .nav__link {
         font-size: 1.3rem;
     }
 }
@@ -274,18 +274,18 @@ button:focus {
 
 
 
-    header nav #btnMobile {
+    .nav__toggle {
         display: none;
     }
 
-    header nav ul {
+    .nav__list {
 
         gap: 1.5rem;
         display: flex;
     }
 
 
-    header nav ul li a {
+    .nav__link {
         font-size: 1.2rem;
     }
 }
@@ -295,11 +295,11 @@ button:focus {
 
 
 
-    header nav #btnMobile {
+    .nav__toggle {
         display: none;
     }
 
-    header nav ul {
+    .nav__list {
 
         gap: 1rem;
         display: flex;
@@ -307,7 +307,7 @@ button:focus {
     }
 
 
-    header nav ul li a {
+    .nav__link {
         font-size: 1.2rem;
     }
 }
@@ -315,11 +315,11 @@ button:focus {
 @media (max-width: 768px) {
 
 
-    header nav #btnMobile {
+    .nav__toggle {
         display: block;
     }
 
-    header nav ul {
+    .nav__list {
 
         display: none;
         position: absolute;
@@ -335,11 +335,11 @@ button:focus {
 @media (max-width: 600px) {
 
 
-    header nav #btnMobile {
+    .nav__toggle {
         display: block;
     }
 
-    header nav ul {
+    .nav__list {
 
         display: none;
         position: absolute;
@@ -355,11 +355,11 @@ button:focus {
 
 @media (max-width: 480px) {
 
-    header nav #btnMobile {
+    .nav__toggle {
         display: block;
     }
 
-    header nav ul {
+    .nav__list {
 
         display: none;
         position: absolute;
@@ -372,27 +372,22 @@ button:focus {
 }
 
 
-header {
+.header {
     height: 60px;
     width: 100%;
     padding: 0.5rem;
 }
 
 
-header nav ul {
-
+.nav__list {
 
     justify-content: center;
-
-
 
 }
 
 
-header nav #btnMobile {
+.nav__toggle {
     width: fit-content;
-
-
 
     float: right;
 
@@ -405,18 +400,17 @@ header nav #btnMobile {
     cursor: pointer;
 }
 
-header nav #btnMobile hr {
+.nav__bar {
 
     width: 1.5rem;
     margin: 8px 0;
+    
     border-top: 2px solid var(--text-primary);
     border-radius: 10rem;
 
-
-
 }
 
-header nav ul li {
+.nav__item {
 
     list-style: none;
     padding: 0.2rem 1rem;
@@ -426,7 +420,7 @@ header nav ul li {
     border-radius: 0.5rem;
 }
 
-header nav ul li:hover {
+.nav__item:hover {
 
     background-color: var(--color-dark-nav-button-hover);
 
@@ -436,10 +430,10 @@ header nav ul li:hover {
 
 
 
-#aboutUs,
-#services,
-#feedback,
-#contact {
+.about-us,
+.services,
+.feedback,
+.contact {
 
     padding: 2rem;
 
@@ -450,102 +444,102 @@ header nav ul li:hover {
 
 @media (min-width: 1441px) {
 
-    section#aboutUs div#aboutUsContainer div#txtImgContainer {
+    .about-us__intro {
         display: flex;
         align-items: center;
     }
 
-        section#aboutUs div#aboutUsContainer div#txtImgContainer p {
+    .about-us__paragraph {
         font-size: 2rem;
     }
 
-    section#aboutUs div#aboutUsContainer div#txtImgContainer img {
+    .about-us__img {
         width: 50%;
         height: 50%;
     }
 
-    section#aboutUs div#aboutUsContainer div#cardContainer div {
-    display: flex;
-    justify-content: space-around;
-}
+    .about-us__level-content {
+        display: flex;
+        justify-content: space-around;
+    }
 
-section#aboutUs div#aboutUsContainer div#cardContainer div p {
-    font-size: 1.5rem;
-    text-align: center;
-}
+    .about-us__level-paragraph {
+        font-size: 1.5rem;
+        text-align: center;
+    }
 }
 
 
 @media (max-width: 1440px) {
 
-    section#aboutUs div#aboutUsContainer div#txtImgContainer {
+    .about-us__intro {
         display: flex;
         align-items: center;
     }
 
-    section#aboutUs div#aboutUsContainer div#txtImgContainer p {
+    .about-us__paragraph {
         font-size: 2rem;
     }
 
-    section#aboutUs div#aboutUsContainer div#txtImgContainer img {
+    .about-us__img {
         width: 50%;
         height: 50%;
     }
 
-    section#aboutUs div#aboutUsContainer div#cardContainer div {
-    display: flex;
-    justify-content: space-around;
-}
+    .about-us__level-content {
+        display: flex;
+        justify-content: space-around;
+    }
 
-section#aboutUs div#aboutUsContainer div#cardContainer div p {
-    font-size: 1.5rem;
-    text-align: center;
-}
+    .about-us__level-paragraph {
+        font-size: 1.5rem;
+        text-align: center;
+    }
 
 }
 
 @media (max-width: 1200px) {
 
-    section#aboutUs div#aboutUsContainer div#txtImgContainer {
+    .about-us__intro {
         display: flex;
         align-items: center;
     }
 
-    section#aboutUs div#aboutUsContainer div#txtImgContainer p {
+    .about-us__paragraph {
         font-size: 2rem;
     }
 
-    section#aboutUs div#aboutUsContainer div#txtImgContainer img {
+    .about-us__img {
         width: 50%;
         height: 50%;
     }
 
-    section#aboutUs div#aboutUsContainer div#cardContainer div {
-    display: flex;
-    justify-content: space-around;
-}
+    .about-us__level-content {
+        display: flex;
+        justify-content: space-around;
+    }
 
-section#aboutUs div#aboutUsContainer div#cardContainer div p {
-    font-size: 1.5rem;
-    text-align: center;
-}
+    .about-us__level-paragraph {
+        font-size: 1.5rem;
+        text-align: center;
+    }
 
 }
 
 
 @media (max-width: 992px) {
 
-    section#aboutUs div#aboutUsContainer div#txtImgContainer {
+    .about-us__intro {
         display: block;
         align-items: center;
     }
 
-    section#aboutUs div#aboutUsContainer div#txtImgContainer p {
+    .about-us__paragraph {
         font-size: 2rem;
         text-align: center;
     }
 
-    section#aboutUs div#aboutUsContainer div#txtImgContainer img {
+    .about-us__img {
         width: 60%;
         height: 60%;
 
@@ -553,125 +547,120 @@ section#aboutUs div#aboutUsContainer div#cardContainer div p {
         justify-self: center;
     }
 
-    section#aboutUs div#aboutUsContainer div#cardContainer div {
-    display: flex;
-    justify-content: space-around;
-}
+    .about-us__level-content {
+        display: flex;
+        justify-content: space-around;
+    }
 
-section#aboutUs div#aboutUsContainer div#cardContainer div p {
-    font-size: 1.5rem;
-    text-align: center;
-}
+    .about-us__level-paragraph {
+        font-size: 1.5rem;
+        text-align: center;
+    }
 
 }
 
 @media (max-width: 768px) {
 
-    section#aboutUs div#aboutUsContainer div#txtImgContainer {
+    .about-us__intro {
         display: block;
         align-items: center;
     }
 
-    section#aboutUs div#aboutUsContainer div#txtImgContainer p {
+    .about-us__paragraph {
         font-size: 1.7rem;
         text-align: center;
         margin: 1rem 0;
     }
 
-    section#aboutUs div#aboutUsContainer div#txtImgContainer img {
+    .about-us__img {
         width: 100%;
         height: 100%;
     }
 
-    section#aboutUs div#aboutUsContainer div#cardContainer div {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    justify-content: space-between;
-}
+    .about-us__level-content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        justify-content: space-between;
+    }
 
-section#aboutUs div#aboutUsContainer div#cardContainer div p {
-    font-size: 1.3rem;
-    text-align: center;
-}
+    .about-us__level-paragraph {
+        font-size: 1.3rem;
+        text-align: center;
+    }
 
 }
 
 @media (max-width: 600px) {
 
-    section#aboutUs div#aboutUsContainer div#txtImgContainer {
+    .about-us__intro {
         display: block;
         align-items: center;
     }
 
-    section#aboutUs div#aboutUsContainer div#txtImgContainer p {
+    .about-us__paragraph {
         font-size: 1.5rem;
         text-align: center;
         margin: 1rem 0;
     }
 
-    section#aboutUs div#aboutUsContainer div#txtImgContainer img {
+    .about-us__img {
         width: 100%;
         height: 100%;
     }
 
-    section#aboutUs div#aboutUsContainer div#cardContainer div {
-   display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: space-between;
-}
+    .about-us__level-content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: space-between;
+    }
 
-section#aboutUs div#aboutUsContainer div#cardContainer div p {
-    font-size: 1.5rem;
-    text-align: center;
-}
+    .about-us__level-paragraph {
+        font-size: 1.5rem;
+        text-align: center;
+    }
 
 }
 
 
 @media (max-width: 480px) {
 
-    section#aboutUs div#aboutUsContainer div#txtImgContainer {
+    .about-us__intro {
         display: block;
         align-items: center;
     }
 
-    section#aboutUs div#aboutUsContainer div#txtImgContainer p {
+    .about-us__paragraph {
         font-size: 1.6rem;
         text-align: center;
         margin: 1rem 0;
     }
 
-    section#aboutUs div#aboutUsContainer div#txtImgContainer img {
+    .about-us__img {
         width: 100%;
         height: 100%;
     }
 
-    section#aboutUs div#aboutUsContainer div#cardContainer div {
-   display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: space-between;
+    .about-us__level-content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+
+    .about-us__level-paragraph {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
 }
 
-section#aboutUs div#aboutUsContainer div#cardContainer div p {
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-}
-
-
-section#aboutUs div#aboutUsContainer {
+.about-us__container {
     padding: 2rem;
 }
 
-
-
-
-
-section#aboutUs div#aboutUsContainer div#cardContainer h3 {
+.about-us__subtitle {
     font-size: 3rem;
     text-align: center;
 
@@ -679,17 +668,16 @@ section#aboutUs div#aboutUsContainer div#cardContainer h3 {
 }
 
 
-
 /* Serviços */
 
 
-section#services {
+.services {
     display: flex;
     flex-direction: column;
     gap: 4rem;
 }
 
-section#services div#servicesContainer {
+.services__container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -697,26 +685,26 @@ section#services div#servicesContainer {
 
 }
 
-section#services div#servicesContainer img {
+.services__img {
     width: 60%;
     height: 60%;
     object-fit: cover;
 }
 
-section#services div#servicesContainer p {
+.services__subtitle {
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
 }
 
-section#services div#cardContainer {
+.services__card-container {
     display: grid;
     gap: 1rem;
     position: relative;
 
 }
 
-section#services div#cardContainer div.card {
+.services__card {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 150px 50px 100px;
@@ -733,7 +721,7 @@ section#services div#cardContainer div.card {
 
 }
 
-section#services div#cardContainer div.card div.card-header {
+.services__card-header {
 
     display: flex;
     justify-self: center;
@@ -750,17 +738,17 @@ section#services div#cardContainer div.card div.card-header {
     border-radius: 50%;
 }
 
-section#services div#cardContainer div.card div.card-header img {
+.services__card-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-section#services div#cardContainer div.card h3 {
+.services__card-title {
     text-align: center;
 }
 
-section#services div#cardContainer div.card p {
+.services__card-paragraph {
     text-align: center;
     color: var(--text-secondary);
     display: flex;
@@ -769,14 +757,14 @@ section#services div#cardContainer div.card p {
 
 
 @media (min-width: 1441px) {
-    section#services div#cardContainer {
+    .services__card-container {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 }
 
 @media (max-width: 1440px) {
 
-    section#services div#cardContainer {
+    .services__card-container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
@@ -784,7 +772,7 @@ section#services div#cardContainer div.card p {
 
 @media (max-width: 1200px) {
 
-    section#services div#cardContainer {
+    .services__card-container {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
@@ -793,21 +781,21 @@ section#services div#cardContainer div.card p {
 
 @media (max-width: 992px) {
 
-    section#services div#cardContainer {
+    .services__card-container {
         grid-template-columns: 1fr 1fr;
     }
 
 }
 
 @media (max-width: 768px) {
-    section#services div#cardContainer {
+    .services__card-container {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (max-width: 600px) {
 
-    section#services div#cardContainer {
+    .services__card-container {
         grid-template-columns: 1fr;
     }
 
@@ -816,7 +804,7 @@ section#services div#cardContainer div.card p {
 
 @media (max-width: 480px) {
 
-    section#services div#cardContainer {
+    .services__card-container {
         grid-template-columns: 1fr;
     }
 }
@@ -826,17 +814,17 @@ section#services div#cardContainer div.card p {
 
 
 
-section#feedback div#feedbackContainer {
+.feedback__container {
     display: flex;
     align-items: center;
 }
 
-section#feedback div#feedbackContainer img {
+.feedback__img {
 
     object-fit: cover;
 }
 
-section#feedback div#feedbackContentContainer {
+.feedback__content-container {
 
     padding: 1rem 2rem;
 
@@ -856,7 +844,7 @@ section#feedback div#feedbackContentContainer {
 
 
 
-section#feedback div#feedbackContentContainer div.feedbackContent {
+.feedback__content {
 
     background-color: var(--color-feedback-content-dark);
 
@@ -867,174 +855,167 @@ section#feedback div#feedbackContentContainer div.feedbackContent {
 
 
 }
-
-section#feedback div#feedbackContentContainer div.feedbackContent p.feedbackComent {
+.feedback__coment {
     font-size: 1.3rem;
     margin-bottom: 1rem;
-        text-align: left;
+    text-align: left;
 }
 
-section#feedback div#feedbackContentContainer div.feedbackContent p.feedbackAuthor {
+.feedback__author {
     font-size: 1.2rem;
 
 }
 
 @media (min-width: 1441px) {
-section#feedback div#feedbackContainer {
-    flex-direction: row;
-}
+    .feedback__container {
+        flex-direction: row;
+    }
 
-section#feedback div#feedbackContainer img {
+    .feedback__img {
         width: 40%;
-    height: 40%;
-}
+        height: 40%;
+    }
 
-section#feedback div#feedbackComentContainer p {
-    font-size: 2rem;
-}
+.feedback__paragraph {
+        font-size: 2rem;
+    }
 }
 
 
 @media (max-width: 1440px) {
-section#feedback div#feedbackContainer {
-    flex-direction: row;
-}
-
-section#feedback div#feedbackContainer img {
-        width: 40%;
-    height: 40%;
-}
-
-section#feedback div#feedbackComentContainer p {
-    font-size: 2rem;
-}
-}
-
-@media (max-width: 1200px) {
-    section#feedback div#feedbackContainer {
+    .feedback__container {
         flex-direction: row;
     }
 
-    section#feedback div#feedbackContainer img {
-            width: 40%;
-    height: 40%;
+    .feedback__img {
+        width: 40%;
+        height: 40%;
     }
 
-    section#feedback div#feedbackComentContainer p {
-    font-size: 2rem;
+.feedback__paragraph {
+        font-size: 2rem;
+    }
 }
+
+@media (max-width: 1200px) {
+    .feedback__container {
+        flex-direction: row;
+    }
+
+    .feedback__img {
+        width: 40%;
+        height: 40%;
+    }
+
+.feedback__paragraph {
+        font-size: 2rem;
+    }
 }
 
 
 @media (max-width: 992px) {
-    section#feedback div#feedbackContainer {
+    .feedback__container {
         flex-direction: column;
     }
 
-    section#feedback div#feedbackContainer img {
-            width: 60%;
-    height: 60%;
+    .feedback__img {
+        width: 60%;
+        height: 60%;
     }
 
-    section#feedback div#feedbackComentContainer p {
-    font-size: 2rem;
-    text-align: center;
-}
+.feedback__paragraph {
+        font-size: 2rem;
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
-section#feedback div#feedbackContainer {
-    flex-direction: column;
-}
+    .feedback__container {
+        flex-direction: column;
+    }
 
-section#feedback div#feedbackContainer img {
+    .feedback__img {
         width: 70%;
-    height: 70%;
-}
+        height: 70%;
+    }
 
-section#feedback div#feedbackComentContainer p {
-    font-size: 2rem;
-    text-align: center;
-}
+.feedback__paragraph {
+        font-size: 2rem;
+        text-align: center;
+    }
 }
 
 @media (max-width: 600px) {
-section#feedback div#feedbackContainer {
-    flex-direction: column;
-}
+    .feedback__container {
+        flex-direction: column;
+    }
 
-section#feedback div#feedbackContainer img {
+    .feedback__img {
         width: 80%;
-    height: 80%;
-}
+        height: 80%;
+    }
 
-section#feedback div#feedbackComentContainer p {
-    font-size: 2rem;
-    text-align: center;
-}
+.feedback__paragraph {
+        font-size: 2rem;
+        text-align: center;
+    }
 }
 
 
 @media (max-width: 480px) {
-section#feedback div#feedbackContainer {
-    flex-direction: column;
-}
+    .feedback__container {
+        flex-direction: column;
+    }
 
-section#feedback div#feedbackContainer img {
+    .feedback__img {
         width: 100%;
-    height: 100%;
+        height: 100%;
+    }
+
+.feedback__paragraph {
+        font-size: 2rem;
+        text-align: center;
+    }
 }
 
-section#feedback div#feedbackComentContainer p {
-    font-size: 2rem;
-    text-align: center;
-}
-}
 
 
-
-section#contact div#contactContainer {
+.contact__container {
     display: flex;
-   
+
 
 }
 
-section#contact div#txtImgContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-section#contact div#contactContainer img {
+.contact__img {
 
     object-fit: cover;
 }
 
-section#contact div#contactContainer div#contactContent p {
+.contact__content-paragraph {
     font-size: 2rem;
 
 }
 
-section#contact div#contactContainer div#contactContent div#contactInfo p {
+.contact__info-paragraph {
 
     font-size: 1.4rem;
     margin: 1rem 0;
 
 }
 
-section#contact div#contactContainer div#contactContent div#contactForms form {
+.contact__forms {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-section#contact div#contactContainer div#contactContent div#contactForms form label {
+.contact__forms-label{
     font-size: 1.25rem;
     font-weight: 600;
 
 }
 
-section#contact div#contactContainer div#contactContent div#contactForms form input {
+.contact__forms-input {
     width: 100%;
     padding: 0.3rem 0.3rem 0.3rem 0.5rem;
 
@@ -1047,7 +1028,7 @@ section#contact div#contactContainer div#contactContent div#contactForms form in
     border: var(--color-form-border-dark) solid 1.5px;
 }
 
-section#contact div#contactContainer div#contactContent div#contactForms form textarea {
+.contact__forms-textarea {
     width: 100%;
     border-radius: 0.5rem;
     background-color: var(--color-form-body-dark);
@@ -1060,7 +1041,7 @@ section#contact div#contactContainer div#contactContent div#contactForms form te
 
 }
 
-section#contact div#contactContainer div#contactContent div#contactForms form button[type="submit"] {
+.contact__forms-btn-submit {
     width: fit-content;
     border-radius: 0.5rem;
     background-color: var(--color-form-background-button-submit-dark);
@@ -1076,84 +1057,87 @@ section#contact div#contactContainer div#contactContent div#contactForms form bu
 
 }
 
-@media (min-width: 1441px ) {
-section#contact div#contactContainer {
-     flex-direction: row;
-}
+@media (min-width: 1441px) {
+    .contact__container {
+        flex-direction: row;
+    }
 
-section#contact div#contactContainer img {
+    .contact__img {
         width: 40%;
-    height: 40%;
-}
+        height: 40%;
+    }
 }
 
 
 @media (max-width: 1440px) {
-section#contact div#contactContainer {
-     flex-direction: row;
-}
+    .contact__container {
+        flex-direction: row;
+    }
 
-section#contact div#contactContainer img {
+    .contact__img {
         width: 40%;
-    height: 40%;
-}
+        height: 40%;
+    }
 }
 
 @media (max-width: 1200px) {
-    section#contact div#contactContainer {
-         flex-direction: row;
+    .contact__container {
+        flex-direction: row;
     }
 
-    section#contact div#contactContainer img {
-            width: 40%;
-    height: 40%;
+    .contact__img {
+        width: 40%;
+        height: 40%;
     }
 }
 
 
 @media (max-width: 992px) {
-    section#contact div#contactContainer { 
+    .contact__container {
         flex-direction: column;
-       
+
     }
 
-    section#contact div#contactContainer img {
-            width: 70%;
-    height: 70%;
+    .contact__img {
+        width: 70%;
+        height: 70%;
         display: flex;
-    align-self: center;
+        align-self: center;
     }
 }
 
 @media (max-width: 768px) {
-    section#contact div#contactContainer { 
+    .contact__container {
         flex-direction: column;
     }
-    section#contact div#contactContainer img {
-            width: 70%;
-    height: 70%;
-    display: flex;
-    align-self: center;
+
+    .contact__img {
+        width: 70%;
+        height: 70%;
+        display: flex;
+        align-self: center;
     }
 }
 
 @media (max-width: 600px) {
-    section#contact div#contactContainer { 
+    .contact__container {
         flex-direction: column;
     }
-    section#contact div#contactContainer img {
-            width: 100%;
-    height: 100%;
+
+    .contact__img {
+        width: 100%;
+        height: 100%;
     }
 }
 
 
 @media (max-width: 480px) {
-    section#contact div#contactContainer { 
+    .contact__container {
         flex-direction: column;
     }
-    section#contact div#contactContainer img {
-            width: 100%;
-    height: 100%;
+
+    .contact__img {
+        width: 100%;
+        height: 100%;
     }
 }
