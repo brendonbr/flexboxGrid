@@ -1,0 +1,512 @@
+@use 'sass:color';
+@use 'sass:math';
+
+@use 'variaveis';
+@use 'componentes';
+@use 'mixins' as *;
+
+
+.header {
+    height: 60px;
+    width: 100%;
+    padding: 0.5rem;
+
+}
+
+.nav {
+
+    &__list {
+        justify-content: center;
+        list-style: none;
+
+
+        @include media_minWidthBreakpoint(xxxl) {
+            @include navGapDisplay(2rem, flex);
+        }
+
+        @include media_maxWidthBreakpoint(xxl) {
+            @include navGapDisplay(2rem, flex);
+        }
+
+        @include media_maxWidthBreakpoint(xl) {
+            @include navGapDisplay(1.5rem, flex)
+        }
+
+        @include media_maxWidthBreakpoint(md) {
+            @include navGapDisplay(0, none);
+            position: absolute;
+            top: 60px;
+            left: 0;
+            background-color: variaveis.$background-dark;
+            width: 100%;
+        }
+
+        @include media_maxWidthBreakpoint(sm) {
+            @include navGapDisplay(0, none);
+            position: absolute;
+            top: 60px;
+            left: 0;
+            background-color: variaveis.$background-dark;
+            width: 100%;
+        }
+
+        @include media_maxWidthBreakpoint(xs) {
+            @include navGapDisplay(0, none);
+            position: absolute;
+            top: 60px;
+            left: 0;
+            background-color: variaveis.$background-dark;
+            width: 100%;
+        }
+
+    }
+
+    &__item {
+
+        @include componentes.btnPattern;
+        background-color: color.scale(variaveis.$color-primary, $lightness: -30%);
+
+        &:hover {
+            background-color: color.scale(variaveis.$color-primary, $lightness: +10%);
+        }
+    }
+
+    &__link {
+
+        text-decoration: none;
+
+
+        @include media_minWidthBreakpoint(xxxl) {
+            font-size: 1.3rem;
+        }
+
+        @include media_maxWidthBreakpoint(xxl) {
+            font-size: 1.3rem;
+        }
+
+        @include media_maxWidthBreakpoint(xl) {
+            font-size: 1.2rem;
+        }
+
+        @include media_maxWidthBreakpoint(md) {
+            font-size: 1.2rem;
+        }
+
+    }
+
+
+    &__toggle {
+        @include componentes.btnPattern;
+        width: fit-content;
+        float: right;
+        cursor: pointer;
+
+
+        @include media_minWidthBreakpoint(xxxl) {
+            display: none;
+        }
+
+        @include media_maxWidthBreakpoint(xxl) {
+            display: none;
+        }
+
+        @include media_maxWidthBreakpoint(xl) {
+            display: none;
+        }
+
+        @include media_maxWidthBreakpoint(md) {
+            display: block;
+        }
+
+        @include media_maxWidthBreakpoint(sm) {
+            display: block;
+        }
+
+        @include media_maxWidthBreakpoint(xs) {
+            display: block;
+        }
+
+
+        &__bar {
+
+            width: 1.5rem;
+            margin: 8px 0;
+            border-top: 2px solid;
+            border-radius: 10rem;
+        }
+    }
+
+
+
+}
+
+
+.about-us {
+
+    padding: 2rem;
+
+    &__container {
+        padding: 2rem;
+    }
+
+    &__intro {
+
+        @include media_minWidthBreakpoint(xxxl) {
+            display: flex;
+            align-items: center;
+        }
+
+        @include media_maxWidthBreakpoint(xxl) {
+            display: flex;
+            align-items: center;
+        }
+
+        @include media_maxWidthBreakpoint(xl) {
+            display: flex;
+            align-items: center;
+        }
+
+        @include media_maxWidthBreakpoint(md) {
+            display: block;
+        }
+
+        @include media_maxWidthBreakpoint(sm) {
+            display: block;
+        }
+
+        @include media_maxWidthBreakpoint(xs) {
+            display: block;
+        }
+
+    }
+
+    &__img {
+
+        @include imgResize;
+    }
+
+    &__paragraph {
+        @include media_minWidthBreakpoint(xxxl) {
+            font-size: 2rem;
+        }
+
+        @include media_maxWidthBreakpoint(xxl) {
+            font-size: 2rem;
+        }
+
+        @include media_maxWidthBreakpoint(xl) {
+            font-size: 1.5rem;
+        }
+
+        @include media_maxWidthBreakpoint(md) {
+            font-size: 1.7rem;
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        @include media_maxWidthBreakpoint(sm) {
+            font-size: 1.6rem;
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        @include media_maxWidthBreakpoint(xs) {
+            font-size: 1.5rem;
+            text-align: center;
+            margin: 1rem 0;
+        }
+    }
+
+    &__subtitle {
+        font-size: 3rem;
+        text-align: center;
+        margin: 4rem 0;
+    }
+
+    &__level-content {
+        display: flex;
+
+        @include media_minWidthBreakpoint(xxxl) {
+            justify-content: space-around;
+        }
+
+        @include media_maxWidthBreakpoint(xxl) {
+            justify-content: space-around;
+        }
+
+        @include media_maxWidthBreakpoint(xl) {
+            justify-content: space-around;
+        }
+
+        @include media_maxWidthBreakpoint(md) {
+            flex-direction: column;
+            gap: 0.5rem;
+            justify-content: space-between;
+        }
+
+        @include media_maxWidthBreakpoint(sm) {
+            flex-direction: column;
+            gap: 1rem;
+            justify-content: space-between;
+        }
+
+        @include media_maxWidthBreakpoint(xs) {
+            flex-direction: column;
+            gap: 1rem;
+            justify-content: space-between;
+        }
+    }
+
+    &__level-paragraph {
+        text-align: center;
+        font-size: 1.5rem;
+
+    }
+
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 2rem;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__img {
+
+
+        object-fit: cover;
+
+        @include imgResize;
+
+    }
+
+    &__subtitle {
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    &__card-container {
+        display: grid;
+        gap: 1rem;
+        position: relative;
+
+        @include media_minWidthBreakpoint(xxxl) {
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        @include media_maxWidthBreakpoint(xxl) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        @include media_maxWidthBreakpoint(xl) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        @include media_maxWidthBreakpoint(md) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include media_maxWidthBreakpoint(sm) {
+            grid-template-columns: 1fr;
+        }
+
+        @include media_maxWidthBreakpoint(xs) {
+            grid-template-columns: 1fr;
+        }
+
+    }
+
+    &__card {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 50px 130px;
+
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        background-color: color.scale(variaveis.$color-primary, $lightness: -15%);
+        border-radius: 1rem;
+        padding: 1rem;
+
+        &-header {
+            display: flex;
+            justify-self: center;
+
+            width: 150px;
+            height: 150px;
+
+            padding: 0.5rem;
+
+
+            background-color: color.scale(variaveis.$color-primary, $lightness: -15%);
+
+            border-radius: 50%;
+        }
+
+        &-img {
+            @include imgSizeMax;
+            object-fit: cover;
+        }
+
+        &-title {
+            text-align: center;
+        }
+
+        &-paragraph {
+            text-align: center;
+            color: color.scale(variaveis.$text-primary, $lightness: -10%);
+            display: flex;
+            align-self: flex-start;
+        }
+    }
+
+}
+
+.feedback {
+
+    padding: 2rem;
+
+    &__container {
+        display: flex;
+        align-items: center;
+
+        @include flexRedirect;
+
+    }
+
+    &__img {
+        object-fit: cover;
+
+        @include imgResize;
+    }
+
+    &__content-container {
+        padding: 1rem 2rem;
+
+        background-color: color.scale(variaveis.$color-primary, $lightness: -20%);
+
+        border-radius: 1rem;
+
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        gap: 1rem;
+
+        width: 95%;
+
+
+
+    }
+
+    &__paragraph {
+
+        font-size: 2rem;
+
+        @include media_maxWidthBreakpoint(xl) {
+            text-align: center;
+        }
+
+        @include media_maxWidthBreakpoint(md) {
+            text-align: center;
+        }
+
+        @include media_maxWidthBreakpoint(sm) {
+            text-align: center;
+        }
+
+        @include media_maxWidthBreakpoint(xs) {
+            text-align: center;
+        }
+    }
+
+    &__content {
+        background-color: color.scale(variaveis.$color-primary, $lightness: -30%);
+
+        padding: 1rem;
+
+        border-radius: 0.8rem;
+    }
+
+    &__coment {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    &__author {
+        font-size: 1.2rem;
+    }
+}
+
+.contact {
+    padding: 2rem;
+
+    &__container {
+        display: flex;
+
+        @include flexRedirect;
+    }
+
+    &__img {
+        object-fit: cover;
+
+        @include imgResize;
+
+    }
+
+    &__content-paragraph {
+        font-size: 2rem;
+    }
+
+    &__info-paragraph {
+        font-size: 1.4rem;
+        margin: 1rem 0;
+    }
+
+    &__forms {
+
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        &-label {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        &-input {
+            @include componentes.inputPattern;
+
+        }
+
+        &-textarea {
+            @include componentes.inputPattern;
+
+        }
+
+        &-btn-submit {
+            @include componentes.btnPattern;
+            width: fit-content;
+
+    background-color:  color.scale(variaveis.$color-primary, $lightness: +20%);
+
+
+    border: color.scale(variaveis.$color-primary, $lightness: -10%) solid 1.5px;
+
+
+            font-size: 2rem;
+            font-weight: bold;
+
+            cursor: pointer;
+        }
+    }
+}

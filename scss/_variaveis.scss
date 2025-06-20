@@ -1,0 +1,47 @@
+$background-dark-h: 231;
+$background-dark-s: 24%;
+$background-dark-l: 10%;
+$background-dark-a: 1;
+$background-dark: hsla($background-dark-h, $background-dark-s, $background-dark-l, $background-dark-a);
+
+$color-white-h: 0;
+$color-white-s: 0%;
+$color-white-l: 100%;
+$color-white-a: 1;
+$color-white: hsla($color-white-h, $color-white-s, $color-white-l, $color-white-a);
+
+
+$color-purple-dark-h: 256;
+$color-purple-dark-s: 80%;
+$color-purple-dark-l: 50%;
+$color-purple-dark-a: 0.5;
+$color-purple-dark: hsla($color-purple-dark-h, $color-purple-dark-s, $color-purple-dark-l, $color-purple-dark-a);
+
+
+
+$text-primary: $color-white;
+
+$color-primary: $color-purple-dark;
+
+$font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+$breakpoints:(
+xxxl:1441px,
+xxl: 1440px,
+xl: 1200px,
+lg: 992px,
+md: 768px,
+sm: 600px,
+xs: 480px
+);
+
+
+$gap-space: 2rem;
+
+
+$btn-padding: 0.2rem 1rem;
+$btn-border-radius: 0.5rem;
+
+
+$input-padding:0.4rem 0.4rem 0.4rem 0.8rem;

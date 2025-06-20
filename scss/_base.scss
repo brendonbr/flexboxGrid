@@ -1,0 +1,64 @@
+
+@use 'variaveis';
+@use 'mixins';
+
+
+* {
+    @include mixins.baseHtmlconfig;
+    color: variaveis.$text-primary;
+    
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: variaveis.$font-family;
+    background-color: variaveis.$background-dark;
+    
+
+}
+        
+
+h1{
+    font-size: 4rem;
+}
+
+
+
+        @include mixins.media_maxWidthBreakpoint(xl) {
+            h1{
+                text-align: center;
+            }
+        }
+
+        @include mixins.media_maxWidthBreakpoint(md) {
+                        h1{
+                text-align: center;
+            }
+        }
+
+        @include mixins.media_maxWidthBreakpoint(sm) {
+                          h1{
+                text-align: center;
+            }
+        }
+
+        @include mixins.media_maxWidthBreakpoint(xs) {
+                        h1{
+                text-align: center;
+            }
+        }
+a,
+p {
+    text-decoration: none;
+}
+
+
+
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: 2px solid variaveis.$color-primary;
+}

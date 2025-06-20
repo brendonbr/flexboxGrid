@@ -1,0 +1,19 @@
+@use 'sass:color';
+
+@use 'variaveis';
+
+
+@mixin btnPattern{
+    padding: variaveis.$btn-padding;
+    border-radius: variaveis.$btn-border-radius;
+}
+
+@mixin inputPattern{
+    width: 100%;
+    padding: variaveis.$input-padding;
+    font-size: 1.2rem;
+    background-color:  color.scale(variaveis.$color-primary, $lightness: -40%);
+
+    border-radius: 0.5rem;
+    border: color.scale(variaveis.$color-primary, $lightness: -20%) solid 1.5px;
+}

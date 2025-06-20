@@ -1,0 +1,94 @@
+@use 'sass:math';
+@use 'sass:map';
+
+@use 'variaveis' as *;
+
+
+
+@mixin baseHtmlconfig{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@mixin imgSizeMedium{
+           width:50%;
+           height: 50%;
+}
+
+@mixin imgSizeMax{
+            width:100%;
+           height: 100%;
+}
+
+@mixin media_minWidthBreakpoint($size){ 
+    @media (min-width: map.get($breakpoints, $size)){
+        @content
+    }
+};
+
+@mixin media_maxWidthBreakpoint($size){ 
+    @media (max-width: map.get($breakpoints, $size)){
+        @content
+    }
+};
+
+
+@mixin navGapDisplay($gapSize: 2rem, $display:flex){
+    display: $display;
+    gap: $gapSize;
+    
+}
+
+
+@mixin imgResize{
+        @include media_minWidthBreakpoint(xxxl) {
+            @include imgSizeMedium
+        }
+
+        @include media_maxWidthBreakpoint(xxl) {
+            @include imgSizeMedium
+        }
+
+        @include media_maxWidthBreakpoint(xl) {
+            @include imgSizeMedium
+        }
+
+        @include media_maxWidthBreakpoint(md) {
+            @include imgSizeMax
+        }
+
+        @include media_maxWidthBreakpoint(sm) {
+            @include imgSizeMax
+        }
+
+        @include media_maxWidthBreakpoint(xs) {
+            @include imgSizeMax
+        }
+}
+
+@mixin flexRedirect{
+            @include media_minWidthBreakpoint(xxxl) {
+            flex-direction: row;
+        }
+
+        @include media_maxWidthBreakpoint(xxl) {
+            flex-direction: row;
+        }
+
+        @include media_maxWidthBreakpoint(xl) {
+            flex-direction: row;
+        }
+
+        @include media_maxWidthBreakpoint(md) {
+            flex-direction: column;
+        }
+
+        @include media_maxWidthBreakpoint(sm) {
+            flex-direction: column;
+        }
+
+        @include media_maxWidthBreakpoint(xs) {
+            flex-direction: column;
+        }
+}

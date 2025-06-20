@@ -142,8 +142,8 @@
 
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: var(--text-primary);
@@ -261,9 +261,6 @@ button:focus {
         gap: 2rem;
         display: flex;
     }
-
-
-
 
     .nav__link {
         font-size: 1.3rem;
